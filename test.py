@@ -33,10 +33,10 @@ DEFAULT_ACTION_COLUMNS = [
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Predict actions for dataset image pairs only.")
-    parser.add_argument("--checkpoint", default="checkpoints/simple_action/best.pt")
+    parser.add_argument("--checkpoint", default="checkpoints/v2_magweight/best.pt")
     parser.add_argument("--dataset-root", default="dataset")
     parser.add_argument("--test-split", default="testset")
-    parser.add_argument("--output-csv", default="test.csv")
+    parser.add_argument("--output-csv", default="result/test_v2.csv")
     parser.add_argument("--batch-size", type=int, default=32)
     parser.add_argument("--num-workers", type=int, default=0)
     parser.add_argument("--image-size", type=int, default=224)
