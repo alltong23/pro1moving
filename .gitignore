@@ -1,7 +1,7 @@
 __pycache__/
 *.pyc
 checkpoints/
-result/
+result/*.pt
 dataset/
 *.pt
 .DS_Store
