@@ -36,7 +36,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--checkpoint", default="checkpoints/v2_magweight/best.pt")
     parser.add_argument("--dataset-root", default="dataset")
     parser.add_argument("--test-split", default="testset")
-    parser.add_argument("--output-csv", default="result/test_v2.csv")
+    parser.add_argument("--output-csv", default="result/test.csv")
     parser.add_argument("--batch-size", type=int, default=32)
     parser.add_argument("--num-workers", type=int, default=0)
     parser.add_argument("--image-size", type=int, default=224)
